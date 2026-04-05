@@ -1,0 +1,692 @@
+@font-face {
+    font-family: "TAN New York";
+    src: url(Fonts/YAEwfYJNRYY_0.ttf);
+}
+
+@font-face {
+    font-family: "Marcellus";
+    src: url(Fonts/YAEnXArs1iQ_0.ttf);
+}
+
+@font-face {
+    font-family: "TT Hoves";
+    src: url(Fonts/YADK4L2nGbg_0.ttf);
+}
+
+:root {
+    /* MAIN COLORS */
+    --darkpurple: #9252a8;
+    --lightpurple: #c991d5;
+    /* CIRCLE GRADIENTS FOR EACH OC */
+    --purplelily: radial-gradient(circle, var(--darkpurple) 0%, var(--lightpurple) 100%);
+    --atohi: radial-gradient(circle, rgba(202, 100, 35, 1) 0%, rgba(247, 208, 88, 1) 100%);
+    --vhimil: radial-gradient(circle, rgba(179, 255, 207, 1) 0%, rgba(247, 185, 240, 1) 100%);
+    --achlys: radial-gradient(circle, rgba(106, 2, 0, 1) 0%, rgba(216, 216, 216, 1) 100%);
+    --lune: radial-gradient(circle, rgba(53, 51, 158, 1) 0%, rgba(31, 30, 44, 1) 100%);
+    --alex: radial-gradient(circle, rgba(146, 168, 45, 1) 0%, rgba(46, 46, 46, 1) 100%);
+    --ningxiu: radial-gradient(circle, rgba(187, 92, 148, 1) 0%, rgba(236, 191, 220, 1) 100%);
+    --meiying: radial-gradient(circle, rgba(149, 125, 184, 1) 0%, rgba(52, 30, 69, 1) 100%);
+}
+
+
+body {
+    background-color: var(--lightpurple);
+    margin: 0;
+    padding: 0;
+}
+
+.main-title {
+    font-family: "TAN New York";
+    font-size: 80px;
+    color: white;
+
+}
+
+.title {
+    font-family: "TAN New York";
+    font-size: 40px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 200px;
+
+}
+
+
+/* From Uiverse.io by satyamchaudharydev */
+/* inspired form gumroad website */
+.button {
+    --hover-text: black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid var(--darkpurple);
+    border-radius: 4px;
+    padding: 0.8em 1.6em;
+    background: var(--darkpurple);
+    transition: 0.2s;
+    /* margin-top: 40PX; */
+}
+
+
+.button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--lightpurple);
+    box-shadow: 0.25rem 0.25rem var(--darkpurple);
+}
+
+.button:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+.button-text {
+    font-family: "Marcellus";
+    color: white;
+    font-size: 18px;
+}
+
+
+.paragraph {
+    font-family: "Marcellus";
+    color: white;
+    font-size: 18px;
+}
+
+
+br {
+    display: block;
+    margin: 4px 0;
+}
+
+.mini-title {
+    font-family: "Marcellus";
+    color: white;
+    font-size: 22px;
+}
+
+.gallery-paragraph {
+    font-family: "Marcellus";
+    font-size: 24px;
+    color: var(--darkpurple);
+}
+
+.menu {
+    margin: 15px;
+}
+
+.menu-title {
+    font-family: "Marcellus";
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu-checked {
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+.subtitle {
+    font-family: "TT Hoves";
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.308em;
+    color: rgb(255, 255, 255);
+}
+
+.menu {
+    width: 99%;
+    display: flex;
+}
+
+.menu-box {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.video-container {
+    height: 640px;
+    width: 100%;
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.video-container .caption {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    padding-top: 55px;
+    filter: drop-shadow(0.15em 0.1em 0.3em var(--darkpurple));
+}
+
+.index {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    /*border: 3px solid red;*/
+
+}
+
+.index-box {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    /*border: 3px solid green;*/
+}
+
+.circle {
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 10px;
+    height: 40px;
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    align-items: center;
+}
+
+
+.gallery {
+    margin: auto;
+    padding: 10px;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    /* .double {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    } */
+
+}
+
+
+.three-right {
+    display: grid;
+    grid-template-areas: "left right-top"
+                        "left right-bottom";
+    grid-template-columns: 1.5fr 1fr;
+    gap: .5rem;
+    
+    .left { 
+        grid-area: left; 
+
+        figure {
+            height: 100%;
+        }
+    }
+    .right-top { grid-area: right-top; }
+    .right-bottom { grid-area: right-bottom; }
+}
+
+.three-left {
+    display: grid;
+    grid-template-areas: "left-top right"
+                        "left-bottom right";
+    grid-template-columns: 1fr 1.5fr;
+    gap: .5rem;
+    
+    .right { 
+        grid-area: right; 
+
+        figure {
+            height: 100%;
+        }
+    }
+    .left-top { grid-area: left-top; }
+    .left-bottom { grid-area: left-bottom; }
+}
+
+.portfolio {
+    max-width: 50rem;
+    height: auto;
+}
+
+.gallery-item {
+    background-color: white;
+    margin: 0;
+    /* position: relative; */
+    .figure {
+        height: 100%;
+        /* padding: 1rem; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img {
+            /* padding: 1rem; */
+            object-fit: contain;
+        }
+    }
+
+}
+
+.gallery img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+
+/* From Uiverse.io by wilsondesouza */
+ul {
+    list-style: none;
+}
+
+.example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+}
+
+.example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    font-family: "Marcellus";
+    transition: all 0.3s ease;
+}
+
+.example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+}
+
+.example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: var(--darkpurple);
+    transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+
+.example-2 .icon-content a img {
+    position: relative;
+    z-index: 1;
+}
+
+.example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+.example-2 .icon-content a:hover {
+    color: white;
+}
+
+.example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover .filled {
+    height: 100%;
+}
+
+.example-2 .icon-content a[data-social="Tiktok"] .filled,
+.example-2 .icon-content a[data-social="Tiktok"]~.tooltip {
+    background-color: #24262a;
+}
+
+.example-2 .icon-content a[data-social="Artfight"] .filled,
+.example-2 .icon-content a[data-social="Artfight"]~.tooltip {
+    background-color: #5ac8e9;
+}
+
+.example-2 .icon-content a[data-social="Artfol"] .filled,
+.example-2 .icon-content a[data-social="Artfol"]~.tooltip {
+    background: linear-gradient(#ff9ca5,
+            #ec7480);
+}
+
+.example-2 .icon-content a[data-social="Kofi"] .filled,
+.example-2 .icon-content a[data-social="Kofi"]~.tooltip {
+    background-color: #ff5a16;
+}
+
+.card-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.purple-cards .card {
+    --card-bg-color-1: var(--darkpurple); --card-bg-color-2: var(--lightpurple)
+}
+
+
+.card {
+    --card-bg-color-1: white;
+    --card-bg-color-2: red;
+    /* width: 450px; */
+    /* height: 174px; */
+    border-radius: 1rem;
+    /* background-color: var(--darkpurple); */
+    /* background-image:linear-gradient(43deg,var(--lightpurple) 0%, var(--darkpurple) 63%, var(--darkpurple) 100%); */
+    background-color: var(--card-bg-color-1);
+    background-image:linear-gradient(43deg,var(--card-bg-color-2) 0%, var(--card-bg-color-1) 63%, var(--card-bg-color-1) 100%);
+    border: 2px solid white;
+    /* margin: 50px; */
+    margin-bottom: 3rem;
+    padding: 2rem;
+    position: relative;
+    min-height: 7rem;
+
+    p {
+        text-align: justify;
+    }
+
+    button {
+        --width-perc: 45%;
+        position: absolute;
+        bottom: -1.5rem;
+        width: var(--width-perc);
+        left: calc(50% - var(--width-perc)/2);
+
+        /* border-color: white; */
+    }
+}
+
+.card-title {
+    font-family: "TT Hoves";
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.308em;
+    color: white;
+    /* margin-left: 10px; */
+    text-align: center;
+    margin-top: 0;
+}
+
+.card-paragraph {
+    font-family: "Marcellus";
+    color: white;
+    font-size: 15px;
+    /* margin-left: 37px;
+    margin-right: 37px;
+    margin-bottom: 0px; */
+}
+
+.oc-card {
+    width: 450px;
+    height: 246px;
+    border-radius: 1rem;
+    background-color: var(--darkpurple);
+    background-image: linear-gradient(43deg, var(--lightpurple) 30%, var(--darkpurple) 100%);
+    border: 2px solid white;
+    margin: 50px;
+}
+
+.purple-lily {
+    background-image: linear-gradient(43deg, var(--lightpurple) 30%, var(--darkpurple) 100%);
+}
+
+.atohi {
+    color: black;
+    background: var(--atohi);
+}
+
+.ning-xiu {
+    background: var(--ningxiu);
+}
+
+.mei-ying {
+    background: var(--meiying);
+}
+
+.vhimil {
+    color: black;
+    background: var(--vhimil);
+}
+
+.achlys {
+    background: var(--achlys);
+}
+
+.lune {
+    background: var(--lune);
+}
+
+.alex {
+    background: var(--alex);
+}
+
+.emotes {
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+    background-color: var(--darkpurple);
+    background-image: linear-gradient(43deg, var(--lightpurple) 30%, var(--darkpurple) 100%);
+    border: 2px solid white;
+    margin-top: 20px;
+
+    grid-template-areas:
+        "item-1 item-2 item-3 item-4 item-5"
+        /*Burger*/
+        /*Cheer*/
+        /*Strong*/
+        /*Stars*/
+        /*Music*/
+        "item-6 item-7 item-8 item-9 item-10"
+        /*Popcorn*/
+        /*Coffee*/
+        /*Eyes*/
+        /*Draw*/
+        /*Sign*/
+        "item-11 item-12 item-13 item-14 item-15"
+        /*Read*/
+        /*Scared*/
+        /*Glasses*/
+        /*No money*/
+    ;
+}
+
+.emote {
+    position: relative;
+}
+
+.emotes img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    height: 170px;
+    width: 170px;
+}
+
+
+.banner-container {
+    height: 480px;
+    width: 100%;
+    position: relative;
+    margin-top: 80px;
+}
+
+.banner-container video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.banner-container .caption {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    padding-top: 55px;
+    filter: drop-shadow(0.15em 0.1em 0.3em var(--darkpurple));
+}
+
+
+/* DA RIFARE */
+.about-card {
+    width: 980px;
+    height: 368px;
+    border-radius: 1rem;
+    background-color: var(--darkpurple);
+    background-image: linear-gradient(90deg, var(--darkpurple) 0%, var(--lightpurple) 100%);
+    border: 2px solid white;
+    margin: 50px;
+}
+
+.about-card {
+    width: 980px;
+    height: 368px;
+    border-radius: 1rem;
+    background-color: var(--darkpurple);
+    background-image: linear-gradient(90deg, var(--darkpurple) 0%, var(--lightpurple) 100%);
+    border: 2px solid white;
+    margin: 50px;
+}
+
+
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io-button {
+    border: 1px solid var(--darkpurple);
+    border-radius: 4px;
+    padding: 0.8em 1.6em;
+    background: var(--darkpurple);
+
+    color: white;
+    font-family: "Marcellus";
+    color: white;
+    font-size: 18px;
+    /* From Uiverse.io by adamgiebl 
+    padding: 0.35em;
+    padding-left: 1.2em;
+    border-radius: 0.9em;
+    border: none;*/
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em var(--darkpurple);
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+    margin-left: 86%;
+    margin-top: 35px;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 4px;
+    /* From Uiverse.io by adamgiebl
+    border-radius: 0.7em; */
+    box-shadow: 0.1em 0.1em 0.6em 0.2em var(--darkpurple);
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: var(--darkpurple);
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+.tag-box{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 230px;
+    margin-bottom: 20px;
+}
+
+.tag{
+    width: 140px;
+    height: 40px;
+    border-radius: 1rem;
+    background-color: var(--darkpurple);
+    background-image:linear-gradient(43deg,var(--lightpurple) 0%, var(--darkpurple) 63%, var(--darkpurple) 100%);
+    border: 2px solid white;
+    margin-left: 20px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
