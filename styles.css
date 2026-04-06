@@ -96,20 +96,6 @@
     }
 }
 
-/* @media (width >=1500px) {
-    .video-hero {
-        width: 100vw;
-        height: 40vw;
-    }
-}
-
-@media (width < 1500px) {
-    .video-hero {
-        width: 100vw;
-        height: 40vw;
-    }
-} */
-
 
 body {
     background-color: var(--lightpurple);
@@ -122,7 +108,7 @@ body {
 
 .main-title {
     font-family: "TAN New York";
-    font-size: 5rem;
+    font-size: 5vw; /*5rem*/
     color: white;
     margin-top: 8rem;
 }
@@ -218,7 +204,7 @@ br {
 .menu-title {
     font-family: "Marcellus";
     color: rgba(255, 255, 255, 0.5);
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     text-decoration: none;
 
     .menu-name a::before {
@@ -248,7 +234,7 @@ a:hover {
 .subtitle {
     font-family: "TT Hoves";
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.8vw;
     letter-spacing: 0.15em;
     color: rgb(255, 255, 255);
 }
@@ -263,12 +249,15 @@ a:hover {
     position: relative;
 }
 
-.video-container .video {
-    height: 100%;
-    width: 100%;
+.video {
+    /* height: 100%;
+    width: 100%; */
     position: absolute;
     object-fit: cover;
     z-index: 0;
+
+    width: 100vw;
+    height: 40vw;
 }
 
 .video-container .caption {
