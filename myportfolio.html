@@ -13,29 +13,35 @@
     <!-- MENU-->
     <div class="menu">
         <div class="menu-title menu-box">
-            <span class="menu-name"><a href="main.html">HOME</a></span>
+            <span class="menu-name"><a href="index.html">HOME</a></span>
         </div>
         <div class="menu-title menu-box">
-            <span class="menu-name"><a class="menu-checked" href="portfolio.html">PORTFOLIO</a></span>
+            <span class="menu-name"><a class="menu-checked" href="myportfolio.html">PORTFOLIO</a></span>
         </div>
         <div class="menu-title menu-box">
             <span class="menu-name"><a href="myocs.html">MY OCS</a></span>
         </div>
     </div>
 
+    <div class="title">Welcome to my portfolio</div>
+
     <!-- TAGS SECTION-->
     <div class="mini-title" style="margin-left: 13.75rem; margin-top: 1.3rem; margin-bottom: 1.3rem;">Jump straight to:
     </div>
     <div class="tag-box">
-        <button class="mini-title tag" onClick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth' });">Portfolio </button>
-        <button class="mini-title tag" onClick="document.getElementById('emotes').scrollIntoView({behavior: 'smooth' });">Emotes</button>
-        <button class="mini-title tag" onClick="document.getElementById('artfight').scrollIntoView({behavior: 'smooth' });">Art Fight</button>
-        <button class="mini-title tag" onClick="document.getElementById('refsheets').scrollIntoView({behavior: 'smooth' });">Ref sheets</button>
+        <button class="mini-title tag"
+            onClick="document.getElementById('artworks').scrollIntoView({behavior: 'smooth' });">Artworks</button>
+        <button class="mini-title tag"
+            onClick="document.getElementById('emotes').scrollIntoView({behavior: 'smooth' });">Emotes</button>
+        <button class="mini-title tag"
+            onClick="document.getElementById('artfight').scrollIntoView({behavior: 'smooth' });">Art Fight</button>
+        <button class="mini-title tag"
+            onClick="document.getElementById('refsheets').scrollIntoView({behavior: 'smooth' });">Ref sheets</button>
     </div>
 
     <!-- PORTFOLIO GALLERY-->
-    <a id="portfolio"></a>
-    <h1 class="title">Portfolio</h1>
+    <a id="artworks"></a>
+    <div class="title">Artworks</div>
 
     <div class="newgallery">
         <div class="gallery-row">
@@ -67,7 +73,7 @@
 
     <!-- EMOTES GALLERY-->
     <a href="emotes"></a>
-    <h1 class="title" id="emotes">Emotes</h1>
+    <div class="title" id="emotes">Emotes</div>
     <div class="paragraph" style="margin-left: 15%;">* emote bases are from <a class="paragraph"
             href="https://ko-fi.com/takiimikiku" style="text-decoration-line: underline;">Loumon</a> on Kofi</div>
 
@@ -129,18 +135,20 @@
             <img src="Art/Emotes/PL_NoMoney.png" alt="Purple Lily has no money">
         </div>
 
-        <!-- <div class="emote" >
-                <img src="" alt=" ">
-        </div> -->
     </div>
 
     <!-- ART FIGHT GALLERY-->
     <a id="artfight"></a>
-    <h1 class="title">Art Fight</h1>
-    <div class="paragraph" style="margin-left: 15%;">2025 attacks coming soon!</div>
+    <div class="title">Art Fight</div>
+    <div class="paragraph" style="margin-left: 15%;">2026 attacks coming soon!</div>
+    <div class="paragraph" style="margin-left: 15%;">Fill out my hit-list in the meantime: <a class="paragraph"
+            href="https://forms.gle/k9vWMu4mTPsKpp8E8" style="text-decoration-line: underline;">Purple_Lily22's hit-list
+            for 2026!</a></div>
+
+
     <!-- Ref sheets GALLERY-->
     <a id="refsheets"></a>
-    <h1 class="title">Ref sheets</h1>
+    <div class="title">Ref sheets</div>
 
     <div class="newgallery">
         <div class="gallery-row">
@@ -163,12 +171,53 @@
         </div>
     </div>
 
+     <!-- SOCIALS-->
+    <div class="socials-bar">
+        <h1 class="paragraph center" style="margin-bottom: 3rem;">Follow me for exclusive content:</h1>
+        <ul class="socials">
+            <li class="icon-content">
+                <a href="https://www.tiktok.com/@purplelily_art" aria-label="TikTok" data-social="TikTok">
+                    <div class="filled"></div>
+                    <img src="Other/Tiktok.png" width="30" height="30"></img>
+                </a>
+                <div class="tooltip">TikTok</div>
+            </li>
+            <li class="icon-content">
+                <a href="https://artfight.net/~Purple_Lily22" aria-label="Artfight" data-social="Artfight">
+                    <div class="filled"></div>
+                    <img src="Other\ArtFight.png" width="50" height="50"></img>
+                </a>
+                <div class="tooltip">Artfight</div>
+            </li>
+            <li class="icon-content">
+                <a href="https://www.tumblr.com/blog/purplelily22" aria-label="Tumblr" data-social="Tumblr">
+                    <div class="filled"></div>
+                    <img src="Other/Tumblr.png" width="40" height="40"></img>
+                </a>
+                <div class="tooltip">Tumblr</div>
+            </li>
+            <li class="icon-content">
+                <a href="https://artfol.app/@purplelily" aria-label="Artfol" data-social="Artfol">
+                    <div class="filled"></div>
+                    <img src="Other\Artfol.png" width="40" height="40"></img>
+                </a>
+                <div class="tooltip">Artfol</div>
+            </li>
+            <li class="icon-content">
+                <a href="https://ko-fi.com/purplelily22/shop" aria-label="Kofi" data-social="Kofi">
+                    <div class="filled"></div>
+                    <img src="Other\Kofi.png" width="38" height="38"></img>
+                </a>
+                <div class="tooltip">Kofi</div>
+            </li>
+        </ul>
+    </div>
 
     <!-- END BANNER-->
     <div class="banner-container">
-        <img class="video-hero" src="Art/OC_PurpleLily/eyebanner2_PL.gif" style="width: 100%; height: 70%; position: absolute; object-fit: cover; z-index: 0;">
+        <img class="video-hero" src="Art/OC_PurpleLily/eyebanner2_PL.gif">
         <div class="caption">
-            <h1 class="banner-title center">✦ Commission me ✦</h1>
+            <div class="banner-title center">✦ Commission me ✦</div>
             <div class="buttons">
                 <button title="Commission me" class="button button-text"
                     onclick="window.open('https://vgen.co/PurpleLily22', '_blank'); return false;">Commission me
