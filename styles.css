@@ -481,7 +481,6 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    position: relative;
 }
 
 .card-group {
@@ -703,10 +702,9 @@ ul {
     .bubble {
         color: white;
         background: var(--purplelily-line);
-
         position: absolute;
-        top: 1.3rem;
-        right: 30rem;
+        margin-right: -3rem;
+        margin-top: -1rem;
     }
 
     .bubble:after {
@@ -793,10 +791,9 @@ ul {
     .bubble {
         color: black;
         background: var(--atohi-line1);
-
         position: absolute;
-        top: 1.3rem;
-        right: 30rem;
+        margin-right: -3rem;
+        margin-top: -1rem;
     }
 
     .bubble:after {
@@ -870,8 +867,8 @@ ul {
         color: black;
         background: var(--vhimil-line1);
         position: absolute;
-        top: 1.3rem;
-        right: 30rem;
+        margin-right: -3rem;
+        margin-top: -1rem;
     }
 
     .bubble:after {
@@ -944,8 +941,8 @@ ul {
     .bubble {
         background: var(--ningxiu-line);
         position: absolute;
-        top: 1.3rem;
-        right: 30rem;
+        margin-right: -3rem;
+        margin-top: -1rem;
     }
 
     .bubble:after {
@@ -1016,8 +1013,8 @@ ul {
     .bubble {
         background: var(--meiying-line1);
         position: absolute;
-        top: 1.3rem;
-        right: 30rem;
+        margin-right: -3rem;
+        margin-top: -1rem;
     }
 
     .bubble:after {
@@ -1091,8 +1088,8 @@ ul {
     .bubble {
         background: var(--achlys-line);
         position: absolute;
-        top: 1.3rem;
-        right: 30rem;
+        margin-right: -3rem;
+        margin-top: -1rem;
     }
 
     .bubble:after {
@@ -1164,8 +1161,8 @@ ul {
     .bubble {
         background: var(--lune-line1);
         position: absolute;
-        top: 1.3rem;
-        right: 30rem;
+        margin-right: -3rem;
+        margin-top: -1rem;
     }
 
     .bubble:after {
@@ -1237,8 +1234,8 @@ ul {
     .bubble {
         background: var(--alex-line1);
         position: absolute;
-        top: 1.3rem;
-        right: 30rem;
+        margin-right: -3rem;
+        margin-top: -1rem;
     }
 
     .bubble:after {
@@ -1327,8 +1324,8 @@ ul {
     .bubble {
         background: var(--luan-line1);
         position: absolute;
-        top: 1.3rem;
-        right: 30rem;
+        margin-right: -3rem;
+        margin-top: -1rem;
     }
 
     .bubble:after {
@@ -1567,10 +1564,15 @@ ul {
     padding: 1.5rem;
 
     .oc-profile {
-        width: 14rem;
-        height: 14rem;
-        border-radius: 100%;
-        z-index: 0;
+        display: flex;
+        justify-content: right;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .oc-profile:hover .bubble {
+        opacity: 1;
+        transition: 0.5s;
     }
 
     .hairpalette {
@@ -1769,21 +1771,24 @@ html {
     gap: 2rem;
 }
 
-.oc-profile-pic:hover .bubble {
-    opacity: 1;
-    transition: 0.5s;
+.oc-profile-pic {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 100%;
+    z-index: 0;
 }
 
 .bubble {
+    /*rounded rectangle*/
     position: relative;
     background: var(--lightpurple);
     background-image: var(--purplelily-line);
     color: white;
     line-height: 2.875rem;
     text-align: center;
-    width: 103px;
-    height: 48px;
-    border-radius: 10px;
+    width: 6.4rem;
+    height: auto;
+    border-radius: 0.6rem;
     padding: 0px;
 
     z-index: 1;
@@ -1791,6 +1796,7 @@ html {
 }
 
 .bubble:after {
+    /*triangle*/
     content: '';
     position: absolute;
     display: block;
@@ -1799,7 +1805,6 @@ html {
     border-style: solid;
     border-width: 20px 18px 0 0;
     border-color: var(--darkpurple) transparent transparent transparent;
-    bottom: -20px;
     left: 19%;
     margin-left: -9px;
 }
