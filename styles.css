@@ -281,6 +281,7 @@ a:hover {
 
 .socials-bar {
     margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 .gallery {
@@ -485,7 +486,9 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .card-group {
@@ -493,7 +496,9 @@ ul {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
 
     .about {
         display: grid;
@@ -1565,7 +1570,6 @@ ul {
     background-color: var(--darkpurple);
     background-image: linear-gradient(90deg, var(--darkpurple) 0%, var(--lightpurple) 100%);
     border: 2px solid white;
-    margin-bottom: 2rem;
     padding: 1.5rem;
 
     .oc-profile {
@@ -1699,14 +1703,14 @@ figure {
         ". item-2"
         "item-3 .";
     max-height: 17.5rem;
+    justify-content: center;
     align-items: center;
-    /* gap: 2rem; */
-    row-gap: 2rem;
+    column-gap: 0.7rem;
 }
 
 .three-emotes img {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .emotes3:hover {
@@ -1736,10 +1740,8 @@ figure {
     justify-content: space-around;
 
     img {
-        /* width: 5rem;
-        height: 5rem; */
-        width: 6vw;
-        height: 6vw;
+        width: 5rem;
+        height: 5rem;
     }
 }
 
