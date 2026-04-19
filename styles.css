@@ -494,6 +494,7 @@ ul {
 .card-group {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
     padding-left: 1rem;
@@ -701,6 +702,10 @@ ul {
         background-color: var(--purplelily-col1);
         background-image: var(--purplelily-line);
         border: 0.125rem solid white;
+
+        .hairpalette {
+            height: 5.8rem;
+        }
     }
 
     .vertical-card {
